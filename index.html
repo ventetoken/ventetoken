@@ -1,4 +1,3 @@
-
 <!DOCTYPE html> 
 <html > 
 <head> 
@@ -11,90 +10,90 @@
    
     <script> 
         var test =vrai  ; // False si les contrats sont sur Mainnet 
-        var contractAddressSale = 'addTestBSC à BSC Testnet0xd93Ee6FC9A071cb940993197C0953A065D6Cd9b2'; 
+        var contractAddressSale = 'addTestBSC Ã  BSC Testnet0xd93Ee6FC9A071cb940993197C0953A065D6Cd9b2'; 
         var contractAddressToken = '0x0e86e8fe8AD84eA7cF759d5Dda2aF7723ebA4872'; 
     </script> 
     
     <style> 
         
-        body {font-family : Arial, "Helvetica Neue", Helvetica, sans-serif ; couleur : #FFFFFF ; couleur de fond : #000000 ; taille de police : 16 px ; font-weight : 400 ;} 
+        body {font-familyÂ : Arial, "Helvetica Neue", Helvetica, sans-serifÂ ; couleurÂ : #FFFFFFÂ ; couleur de fondÂ : #000000Â ; taille de policeÂ : 16Â pxÂ ; font-weightÂ : 400Â ;} 
 
-        h1 { font-size : 24px ; font-weight : 700 ;} 
-        h2 { font-size : 22px ; font-weight : 500 ;} 
+        h1 { font-sizeÂ : 24pxÂ ; font-weightÂ : 700Â ;} 
+        h2 { font-sizeÂ : 22pxÂ ; font-weightÂ : 500Â ;} 
 
         .small { 
-            font-size : 12px ; 
+            font-sizeÂ : 12pxÂ ; 
         } 
 
         .err { 
-             couleur : rouge ; 
+             couleurÂ : rougeÂ ; 
         } 
         
         .green { 
-             couleur : vert ; 
+             couleurÂ : vertÂ ; 
         } 
         
         .blue { 
-             couleur : bleu ; 
+             couleurÂ : bleuÂ ; 
         } 
 
         * { 
-          dimensionnement de la boîte : border-box ; 
+          dimensionnement de la boÃ®te : border-boxÂ ; 
         } 
         
         un {
-          couleur : #FFFFFF ; 
-          décoration de texte : aucune ; 
+          couleurÂ : #FFFFFFÂ ; 
+          dÃ©coration de texteÂ : aucuneÂ ; 
         } 
         
         a:hover { 
-          couleur : #C0C0C0 ; 
+          couleurÂ : #C0C0C0Â ; 
         } 
         
         .clickable { 
-            curseur : pointeur ; 
+            curseurÂ : pointeurÂ ; 
         } 
         
         .clickable:hover { 
-            couleur : #C0C0C0 ; 
+            couleurÂ : #C0C0C0Â ; 
         } 
         
         bouton { 
-          couleur de fond : #283747 ; 
-          bordure : aucune ; 
-          rayon de bordure : 2 px ; 
+          couleur de fondÂ : #283747Â ; 
+          bordureÂ : aucuneÂ ; 
+          rayon de bordureÂ : 2Â pxÂ ; 
           Couleur blanche; 
           rembourrage : 5px 20px ; 
-          aligner le texte : centrer ; 
-          décoration de texte : aucune ; 
-          taille de police : 16 px ; 
-          affichage : bloc en ligne ; 
+          aligner le texteÂ : centrerÂ ; 
+          dÃ©coration de texteÂ : aucuneÂ ; 
+          taille de policeÂ : 16Â pxÂ ; 
+          affichageÂ : bloc en ligneÂ ; 
           marge : 4px 2px ;
           curseur : pointeur ; 
         } 
         
-        bouton : hover { 
-          background-color : #008000 ; 
+        boutonÂ : hover { 
+          background-colorÂ : #008000Â ; 
         } 
         
-        bouton[désactivé] { 
-          opacité : 0,6 ; 
-          curseur : non autorisé ; 
+        bouton[dÃ©sactivÃ©] { 
+          opacitÃ©Â : 0,6Â ; 
+          curseurÂ : non autorisÃ©Â ; 
         } 
         
         h { 
-            marge : 20 px ; 
+            margeÂ : 20Â pxÂ ; 
             bordure : 0 ; 
-            bordure supérieure : 1 pixel en pointillés ; 
+            bordure supÃ©rieureÂ : 1Â pixel en pointillÃ©sÂ ; 
         } 
         
         input { 
           text-align: center; 
-          taille de police : 18 px ; 
-          couleur de fond : #000000 ; 
-          couleur : #FFFFFF ; 
-          bordure : solide de 1 pixel ; 
-          largeur max : 100 % ; 
+          taille de policeÂ : 18Â pxÂ ; 
+          couleur de fondÂ : #000000Â ; 
+          couleurÂ : #FFFFFFÂ ; 
+          bordureÂ : solide de 1Â pixelÂ ; 
+          largeur maxÂ : 100Â %Â ; 
         } 
     </style> 
     
@@ -102,35 +101,35 @@
 
 <body> 
     
-    <div style="text-align : center"> 
-        <button id="connect" style="font-size : 12px">Se connecter</button> <button class="switch" id="" style="taille de police : 12px ;"></button> 
-        <span id="nometamask" class="err" style="display : none">Veuillez d'abord installer Metamask...</span> 
+    <div style="text-alignÂ : center"> 
+        <button id="connect" style="font-sizeÂ : 12px">Se connecter</button> <button class="switch" id="" style="taille de policeÂ : 12pxÂ ;"></button> 
+        <span id="nometamask" class="err" style="displayÂ : none">Veuillez d'abord installer Metamask...</span> 
         <div class="network small"><span id="curnet "><span class="err">Veuillez utiliser le navigateur/l'extension DApp (par exemple, <a target="_blank" href="https://metamask.io">Metamask</a>)</span></span > <span id="myAddr"></span> 
-        <span id="referred" style="display:none"><br> Référent : <span id="referrer"></span></span>< /div> 
+        <span id="referred" style="display:none"><br> RÃ©fÃ©rentÂ : <span id="referrer"></span></span>< /div> 
     </div> 
     
-    <div style="text-align : center"> 
+    <div style="text-alignÂ : center"> 
         <h1>Informations sur le jeton</h1>
         <h2><span id="tokenName">Jeton rocheux</span> (<span class="tokenSymbol">ROKY</span>)</h2> 
         <p><a target="_blank" href="https://testnet.bscscan.com/token/0x0e86e8fe8AD84eA7cF759d5Dda2aF7723ebA4872 " id="tokenAddress">0x0e86e8fe8AD84eA7cF759d5Dda2aF7723ebA4872</a></p> 
-        <!-- Réservé au cas où vous voudriez afficher les décimales et l'offre totale : Décimales <span id="#tokenDecimals"></span> Approvisionnement total <span id="#tokenSupply"></span>--> 
-        <p>N'envoyez pas de BNB au contrat de jeton !</p> 
-        <p><button id="addToken" style="text-align: center">Ajouter à Metamask</button> <button id="copyToken" style="text-align: center">Copier l'adresse</button></p> 
+        <!-- RÃ©servÃ© au cas oÃ¹ vous voudriez afficher les dÃ©cimales et l'offre totaleÂ : DÃ©cimales <span id="#tokenDecimals"></span> Approvisionnement total <span id="#tokenSupply"></span>--> 
+        <p>N'envoyez pas de BNB au contrat de jetonÂ !</p> 
+        <p><button id="addToken" style="text-align: center">Ajouter Ã  Metamask</button> <button id="copyToken" style="text-align: center">Copier l'adresse</button></p> 
     </div> 
     
     <hr> 
     
     <div style="text-align: center"> 
-        <h1>Jeton état de la vente</h1> 
+        <h1>Jeton Ã©tat de la vente</h1> 
         <h1> 
             <span id="active" style="display:none" class="status green">Actif</span> 
-            <span id="finished" style="display:none" class ="status green">Terminé</span>
-            <span id="addtokens" style="display:none" class="status err"><br>Demandez à l'administrateur de la vente de jetons d'approuver le contrat de vente de jetons ou vérifiez le solde des jetons sur le portefeuille !</span> 
+            <span id="finished" style="display:none" class ="status green">TerminÃ©</span>
+            <span id="addtokens" style="display:none" class="status err"><br>Demandez Ã  l'administrateur de la vente de jetons d'approuver le contrat de vente de jetons ou vÃ©rifiez le solde des jetons sur le portefeuilleÂ !</span> 
         </h1>
-        <p><progress id="progress" value="0" max="100" style="width : 70 %"></progress></p> 
-        <p>Levé : <span id="raised"> </span> sur <span class="hardcap">15000.0</span> BNB</p> 
-        <p>Jetons vendus : <span id="sold"></span> sur <span class="saleqty">15000000.0</span> <span class="tokenSymbol">ROKY</span></p> 
-        <p>Restant : <span id="toraise"></span> BNB (~ <span id="unsold"></span> <span class="tokenSymbol">ROKYROKY</span>)</p> 
+        <p><progress id="progress" value="0" max="100" style="widthÂ : 70Â %"></progress></p> 
+        <p>LevÃ©Â : <span id="raised"> </span> sur <span class="hardcap">15000.0</span> BNB</p> 
+        <p>Jetons vendusÂ : <span id="sold"></span> sur <span class="saleqty">15000000.0</span> <span class="tokenSymbol">ROKY</span></p> 
+        <p>RestantÂ : <span id="toraise"></span> BNB (~ <span id="unsold"></span> <span class="tokenSymbol">ROKYROKY</span>)</p> 
     </div> 
     <hr> 
     
@@ -138,24 +137,24 @@
         <h1>Acheter des jetons</h1> 
         <p>1 BNB = <span class="rate" >1000.0</span> <span class="tokenSymbol">ROKY</span></p> 
         <p><input type="number" id="buyAmount" value="0" min="0"> BNB</p> 
-        <p>Vous obtenez : <span id=" obtenir">0</span> <span class="tokenSymbol">ROKYROKYROKY </span></p> 
+        <p>Vous obtenezÂ : <span id=" obtenir">0</span> <span class="tokenSymbol">ROKYROKYROKY </span></p> 
         <p><button id="buyBtn" style="text-align: center">Acheter</button></p> 
-        <p>Dans mon portefeuille : <span id="myTokens "></span> <span class="tokenSymbol">ROKY</span></p> 
+        <p>Dans mon portefeuilleÂ : <span id="myTokens "></span> <span class="tokenSymbol">ROKY</span></p> 
     </div> 
     <hr> 
     
     <div style="text-align: center"> 
         <h1>Informations sur la vente de jetons</h1> 
-        <p>Hardcap : <span class="hardcap">15000.0</span> BNB (~ <span class="saleqty">15000000.0</span> <span class="tokenSymbol">ROKY</span>)</p> 
-        <p>Taux : 1 BNB = <span class="rate">1000.0</span> <span class="tokenSymbol">ROKY</span> (~ <span class="prix">0,001</span>BNB/<span class="tokenSymbol">ROKY</span>)</p> 
+        <p>HardcapÂ : <span class="hardcap">15000.0</span> BNB (~ <span class="saleqty">15000000.0</span> <span class="tokenSymbol">ROKY</span>)</p> 
+        <p>TauxÂ : 1 BNB = <span class="rate">1000.0</span> <span class="tokenSymbol">ROKY</span> (~ <span class="prix">0,001</span>BNB/<span class="tokenSymbol">ROKY</span>)</p> 
 
     </div> 
     <hr> 
     
     <div style="text-align: center"> 
         <h1>Contrat de vente</h1> 
-        <p>Vous pouvez également acheter des jetons en envoyant des BNB directement depuis votre portefeuille à ce contrat<br> 
-        (veuillez augmenter la limite de gaz à 200 000 ou même plus pour les jetons avec des fonctions spéciales comme autoLP, swaps, etc.)</p> 
+        <p>Vous pouvez Ã©galement acheter des jetons en envoyant des BNB directement depuis votre portefeuille Ã  ce contrat<br> 
+        (veuillez augmenter la limite de gaz Ã  200 000 ou mÃªme plus pour les jetons avec des fonctions spÃ©ciales comme autoLP, swaps, etc.)</p> 
         <p><a href="https://testnet.bscscan.com/address/0xd93Ee6FC9A071cb940993197C0953A065D6Cd9b2 " target="_blank" id="saleAddress">0xd93Ee6FC9A071cb940993197C0953A065D6Cd9b2</a> <button id="copySale" style="text-align: center">Copier l'adresse</button></p> 
             <div style="text-align: center" id="saleqr"></ div> 
     </div> 
@@ -163,17 +162,17 @@
     
     <div id="refarea" style="text-align: center"> 
         <h1>Programme de parrainage</h1> 
-        <p>Partagez votre lien de parrainage et soyez payé instantanément sur votre portefeuille pour chaque achat de jeton référé.</p> 
-        <p>Total payé aux référents : <span id="refTotal"></span> BNB</p> 
-        <p>Commission de parrainage : <span id="refPercent">dix</span>%</p> 
-        <p>Vos revenus de parrainage : <span id="refMy"></span> BNB</p> 
+        <p>Partagez votre lien de parrainage et soyez payÃ© instantanÃ©ment sur votre portefeuille pour chaque achat de jeton rÃ©fÃ©rÃ©.</p> 
+        <p>Total payÃ© aux rÃ©fÃ©rentsÂ : <span id="refTotal"></span> BNB</p> 
+        <p>Commission de parrainageÂ : <span id="refPercent">dix</span>%</p> 
+        <p>Vos revenus de parrainageÂ : <span id="refMy"></span> BNB</p> 
         
-        <p>Partagez votre lien de parrainage ou votre code QR et obtenez une commission pour les achats de jetons parrainés instantanément dans votre portefeuille.</p> 
+        <p>Partagez votre lien de parrainage ou votre code QR et obtenez une commission pour les achats de jetons parrainÃ©s instantanÃ©ment dans votre portefeuille.</p> 
         <p><input type="text" id="referLink" size="70" readonly="true"> <button id="copyreflink">Copier le lien</button>< /p> 
         <div id="refqrcode"> 
-            <div style="text-align : center" id="refqr"></div> 
+            <div style="text-alignÂ : center" id="refqr"></div> 
         </div> 
-        <p id="refErr" class="err" style= "affichage : aucun">Veuillez connecter votre portefeuille sur Binance Smart Chain pour générer votre lien de parrainage !</p> 
+        <p id="refErr" class="err" style= "affichage : aucun">Veuillez connecter votre portefeuille sur Binance Smart Chain pour gÃ©nÃ©rer votre lien de parrainage !</p> 
     </div> 
     
 <script src='https://dappbuilder.org/js/jquery-3.6.0.min.js' type=" texte/javascript" charset="utf-8"></script>
